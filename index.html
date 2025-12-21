@@ -106,7 +106,20 @@
           left: 100%;
         }
       }
+
+      .social-icon {
+        width: 24px;
+        height: 24px;
+        fill: currentColor;
+      }
     </style>
+    <style>
+      @view-transition {
+        navigation: auto;
+      }
+    </style>
+    <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+    <script src="/_sdk/element_sdk.js" type="text/javascript"></script>
   </head>
   <body class="font-poppins bg-pink-50">
     <!-- Header -->
@@ -149,7 +162,6 @@
         </div>
       </nav>
     </header>
-
     <!-- Hero Section -->
     <section id="inicio" class="cupcake-gradient py-24 sprinkle-animation">
       <div class="container mx-auto px-6 text-center">
@@ -174,7 +186,6 @@
               Diseña tu Cupcake 🎨
             </button>
           </div>
-
           <!-- Cupcakes flotantes decorativos -->
           <div class="mt-16 flex justify-center space-x-8">
             <div class="text-8xl cupcake-bounce" style="animation-delay: 0s">
@@ -190,7 +201,6 @@
         </div>
       </div>
     </section>
-
     <!-- Sabores Populares -->
     <section id="sabores" class="py-24 bg-white">
       <div class="container mx-auto px-6">
@@ -203,7 +213,6 @@
             con mucho cariño
           </p>
         </div>
-
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <!-- Cupcake 1 -->
           <div
@@ -215,14 +224,13 @@
               Suave bizcocho de terciopelo rojo con frosting de queso crema y
               corazoncitos de azúcar
             </p>
-            <div class="text-3xl font-bold text-red-600 mb-4">$4.99</div>
+            <div class="text-3xl font-bold text-red-600 mb-4">$85 MXN</div>
             <button
               class="bg-red-500 text-white px-6 py-3 rounded-full font-bold hover:bg-red-600 transition-colors w-full"
             >
               ¡Lo Quiero! ❤️
             </button>
           </div>
-
           <!-- Cupcake 2 -->
           <div
             class="bg-gradient-to-br from-blue-100 to-blue-200 rounded-3xl p-8 card-float text-center"
@@ -235,14 +243,13 @@
               Bizcocho de vainilla con frosting multicolor y sprinkles de
               colores brillantes
             </p>
-            <div class="text-3xl font-bold text-blue-600 mb-4">$4.49</div>
+            <div class="text-3xl font-bold text-blue-600 mb-4">$75 MXN</div>
             <button
               class="bg-blue-500 text-white px-6 py-3 rounded-full font-bold hover:bg-blue-600 transition-colors w-full"
             >
               ¡Lo Quiero! 🌈
             </button>
           </div>
-
           <!-- Cupcake 3 -->
           <div
             class="bg-gradient-to-br from-yellow-100 to-yellow-200 rounded-3xl p-8 card-float text-center"
@@ -255,14 +262,13 @@
               Refrescante cupcake de limón con frosting cítrico y ralladura de
               limón fresco
             </p>
-            <div class="text-3xl font-bold text-yellow-600 mb-4">$4.79</div>
+            <div class="text-3xl font-bold text-yellow-600 mb-4">$80 MXN</div>
             <button
               class="bg-yellow-500 text-white px-6 py-3 rounded-full font-bold hover:bg-yellow-600 transition-colors w-full"
             >
               ¡Lo Quiero! ☀️
             </button>
           </div>
-
           <!-- Cupcake 4 -->
           <div
             class="bg-gradient-to-br from-purple-100 to-purple-200 rounded-3xl p-8 card-float text-center"
@@ -275,7 +281,7 @@
               Triple chocolate con frosting de chocolate negro y estrellas
               comestibles doradas
             </p>
-            <div class="text-3xl font-bold text-purple-600 mb-4">$5.29</div>
+            <div class="text-3xl font-bold text-purple-600 mb-4">$90 MXN</div>
             <button
               class="bg-purple-500 text-white px-6 py-3 rounded-full font-bold hover:bg-purple-600 transition-colors w-full"
             >
@@ -283,7 +289,6 @@
             </button>
           </div>
         </div>
-
         <!-- Paquetes Especiales -->
         <div class="mt-20">
           <h4 class="font-fredoka text-4xl text-center text-pink-800 mb-12">
@@ -298,9 +303,8 @@
                 Mini Fiesta
               </h5>
               <p class="text-gray-700 mb-4">6 cupcakes variados</p>
-              <div class="text-3xl font-bold text-pink-700">$24.99</div>
+              <div class="text-3xl font-bold text-pink-700">$450 MXN</div>
             </div>
-
             <div
               class="bg-gradient-to-br from-green-200 to-green-300 rounded-3xl p-8 text-center card-float"
             >
@@ -309,9 +313,8 @@
                 Súper Fiesta
               </h5>
               <p class="text-gray-700 mb-4">12 cupcakes variados</p>
-              <div class="text-3xl font-bold text-green-700">$45.99</div>
+              <div class="text-3xl font-bold text-green-700">$850 MXN</div>
             </div>
-
             <div
               class="bg-gradient-to-br from-orange-200 to-orange-300 rounded-3xl p-8 text-center card-float"
             >
@@ -322,13 +325,12 @@
                 Mega Fiesta
               </h5>
               <p class="text-gray-700 mb-4">24 cupcakes variados</p>
-              <div class="text-3xl font-bold text-orange-700">$85.99</div>
+              <div class="text-3xl font-bold text-orange-700">$1,600 MXN</div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
     <!-- Cupcakes Personalizados -->
     <section
       id="personalizados"
@@ -344,7 +346,6 @@
             cualquier celebración especial
           </p>
         </div>
-
         <div class="grid md:grid-cols-2 gap-16 items-center">
           <div>
             <div class="space-y-8">
@@ -361,7 +362,6 @@
                   </p>
                 </div>
               </div>
-
               <div class="flex items-center space-x-4">
                 <div class="bg-blue-500 text-white p-4 rounded-full text-2xl">
                   🌈
@@ -375,7 +375,6 @@
                   </p>
                 </div>
               </div>
-
               <div class="flex items-center space-x-4">
                 <div class="bg-green-500 text-white p-4 rounded-full text-2xl">
                   📝
@@ -389,7 +388,6 @@
                   </p>
                 </div>
               </div>
-
               <div class="flex items-center space-x-4">
                 <div class="bg-yellow-500 text-white p-4 rounded-full text-2xl">
                   🎁
@@ -399,19 +397,17 @@
                     Empaques Especiales
                   </h4>
                   <p class="text-gray-700">
-                    Cajas temáticas y presentaciones elegantes
+                    Cajas tem��ticas y presentaciones elegantes
                   </p>
                 </div>
               </div>
             </div>
-
             <button
               class="mt-8 rainbow-gradient text-white px-10 py-5 rounded-full text-xl font-bold hover:scale-105 transition-transform shadow-2xl"
             >
               ¡Empezar mi Diseño! ✨
             </button>
           </div>
-
           <div class="text-center">
             <div class="bg-white rounded-3xl p-12 shadow-2xl">
               <div class="text-9xl mb-6">🧁</div>
@@ -423,10 +419,7 @@
                 eventos
               </p>
               <div class="flex justify-center space-x-4 text-4xl">
-                <span>👑</span>
-                <span>🦄</span>
-                <span>🌸</span>
-                <span>⚽</span>
+                <span>👑</span> <span>🦄</span> <span>🌸</span> <span>⚽</span>
                 <span>🎂</span>
               </div>
             </div>
@@ -434,168 +427,192 @@
         </div>
       </div>
     </section>
-
     <!-- Testimonios -->
-    <section class="py-24 bg-white">
-      <div class="container mx-auto px-6">
-        <h3 class="font-fredoka text-5xl text-center text-pink-800 mb-16">
+    <section class="py-12 sm:py-24 bg-white">
+      <div class="container mx-auto px-4 sm:px-6">
+        <h3
+          class="font-fredoka text-3xl sm:text-4xl md:text-5xl text-center text-pink-800 mb-10 sm:mb-16"
+        >
           ¡Nuestros Clientes nos Aman!
         </h3>
-
-        <div class="grid md:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
           <div
-            class="bg-gradient-to-br from-pink-50 to-pink-100 rounded-3xl p-8 text-center"
+            class="bg-gradient-to-br from-pink-50 to-pink-100 rounded-3xl p-6 sm:p-8 text-center"
           >
-            <div class="text-5xl mb-4">😍</div>
-            <p class="text-gray-700 mb-4 italic">
+            <div class="text-4xl sm:text-5xl mb-3 sm:mb-4">😍</div>
+            <p class="text-gray-700 text-sm sm:text-base mb-3 sm:mb-4 italic">
               "¡Los cupcakes más deliciosos que he probado! Perfectos para el
               cumpleaños de mi hija."
             </p>
-            <h5 class="font-bold text-pink-700">- María González</h5>
-            <div class="text-yellow-400 text-2xl mt-2">⭐⭐⭐⭐⭐</div>
+            <h5 class="font-bold text-pink-700 text-sm sm:text-base">
+              - María González
+            </h5>
+            <div class="text-yellow-400 text-xl sm:text-2xl mt-2">
+              ⭐⭐⭐⭐⭐
+            </div>
           </div>
-
           <div
-            class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-3xl p-8 text-center"
+            class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-3xl p-6 sm:p-8 text-center"
           >
-            <div class="text-5xl mb-4">🤩</div>
-            <p class="text-gray-700 mb-4 italic">
+            <div class="text-4xl sm:text-5xl mb-3 sm:mb-4">🤩</div>
+            <p class="text-gray-700 text-sm sm:text-base mb-3 sm:mb-4 italic">
               "La decoración personalizada superó todas mis expectativas.
               ¡Increíbles!"
             </p>
-            <h5 class="font-bold text-blue-700">- Carlos Ruiz</h5>
-            <div class="text-yellow-400 text-2xl mt-2">⭐⭐⭐⭐⭐</div>
+            <h5 class="font-bold text-blue-700 text-sm sm:text-base">
+              - Carlos Ruiz
+            </h5>
+            <div class="text-yellow-400 text-xl sm:text-2xl mt-2">
+              ⭐⭐⭐⭐⭐
+            </div>
           </div>
-
           <div
-            class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-3xl p-8 text-center"
+            class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-3xl p-6 sm:p-8 text-center"
           >
-            <div class="text-5xl mb-4">🥰</div>
-            <p class="text-gray-700 mb-4 italic">
+            <div class="text-4xl sm:text-5xl mb-3 sm:mb-4">🥰</div>
+            <p class="text-gray-700 text-sm sm:text-base mb-3 sm:mb-4 italic">
               "Servicio excepcional y sabores únicos. ¡Ya somos clientes
               frecuentes!"
             </p>
-            <h5 class="font-bold text-purple-700">- Ana López</h5>
-            <div class="text-yellow-400 text-2xl mt-2">⭐⭐⭐⭐⭐</div>
+            <h5 class="font-bold text-purple-700 text-sm sm:text-base">
+              - Ana López
+            </h5>
+            <div class="text-yellow-400 text-xl sm:text-2xl mt-2">
+              ⭐⭐⭐⭐⭐
+            </div>
           </div>
         </div>
       </div>
     </section>
-
     <!-- Contacto -->
-    <section id="contacto" class="py-24 cupcake-gradient">
-      <div class="container mx-auto px-6">
-        <div class="text-center mb-16">
-          <h3 class="font-fredoka text-6xl text-pink-800 mb-6">
+    <section id="contacto" class="py-12 sm:py-24 cupcake-gradient">
+      <div class="container mx-auto px-4 sm:px-6">
+        <div class="text-center mb-10 sm:mb-16">
+          <h3
+            class="font-fredoka text-3xl sm:text-5xl md:text-6xl text-pink-800 mb-4 sm:mb-6"
+          >
             ¡Hagamos Realidad tus Sueños Dulces!
           </h3>
-          <p class="text-pink-700 text-xl">
+          <p class="text-pink-700 text-base sm:text-xl px-4">
             Contáctanos para pedidos especiales y consultas
           </p>
         </div>
-
-        <div class="grid md:grid-cols-2 gap-16 max-w-6xl mx-auto">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-16 max-w-6xl mx-auto"
+        >
           <!-- Información de Contacto -->
-          <div class="bg-white rounded-3xl p-10 shadow-2xl">
-            <h4 class="font-fredoka text-3xl text-pink-800 mb-8 text-center">
+          <div class="bg-white rounded-3xl p-6 sm:p-10 shadow-2xl">
+            <h4
+              class="font-fredoka text-2xl sm:text-3xl text-pink-800 mb-6 sm:mb-8 text-center"
+            >
               ¡Encuéntranos!
             </h4>
-
-            <div class="space-y-6">
-              <div class="flex items-center space-x-4">
-                <div class="bg-pink-500 text-white p-4 rounded-full text-2xl">
+            <div class="space-y-5 sm:space-y-6">
+              <div class="flex items-center space-x-3 sm:space-x-4">
+                <div
+                  class="bg-pink-500 text-white p-3 sm:p-4 rounded-full text-xl sm:text-2xl flex-shrink-0"
+                >
                   📍
                 </div>
                 <div>
-                  <h5 class="font-bold text-gray-800 text-lg">
+                  <h5 class="font-bold text-gray-800 text-base sm:text-lg">
                     Nuestra Dulce Ubicación
                   </h5>
-                  <p class="text-gray-600">
-                    Calle de los Cupcakes 456, Zona Rosa
+                  <p class="text-gray-600 text-sm sm:text-base">
+                    Toltecas 166, San Pedro de los Pinos
                   </p>
                 </div>
               </div>
-
-              <div class="flex items-center space-x-4">
-                <div class="bg-blue-500 text-white p-4 rounded-full text-2xl">
+              <div class="flex items-center space-x-3 sm:space-x-4">
+                <div
+                  class="bg-blue-500 text-white p-3 sm:p-4 rounded-full text-xl sm:text-2xl flex-shrink-0"
+                >
                   📞
                 </div>
                 <div>
-                  <h5 class="font-bold text-gray-800 text-lg">Llámanos</h5>
-                  <p class="text-gray-600">+1 (555) CUPCAKE</p>
+                  <h5 class="font-bold text-gray-800 text-base sm:text-lg">
+                    Llámanos
+                  </h5>
+                  <p class="text-gray-600 text-sm sm:text-base">56 1067 7516</p>
                 </div>
               </div>
-
-              <div class="flex items-center space-x-4">
-                <div class="bg-purple-500 text-white p-4 rounded-full text-2xl">
+              <div class="flex items-center space-x-3 sm:space-x-4">
+                <div
+                  class="bg-purple-500 text-white p-3 sm:p-4 rounded-full text-xl sm:text-2xl flex-shrink-0"
+                >
                   ⏰
                 </div>
                 <div>
-                  <h5 class="font-bold text-gray-800 text-lg">
+                  <h5 class="font-bold text-gray-800 text-base sm:text-lg">
                     Horarios Dulces
                   </h5>
-                  <p class="text-gray-600">Lun - Vie: 7:00 AM - 9:00 PM</p>
-                  <p class="text-gray-600">Sáb - Dom: 8:00 AM - 10:00 PM</p>
+                  <p class="text-gray-600 text-sm sm:text-base">
+                    Lun - Vie: 7:00 AM - 9:00 PM
+                  </p>
+                  <p class="text-gray-600 text-sm sm:text-base">
+                    Sáb - Dom: 8:00 AM - 10:00 PM
+                  </p>
                 </div>
               </div>
-
-              <div class="flex items-center space-x-4">
-                <div class="bg-green-500 text-white p-4 rounded-full text-2xl">
+              <div class="flex items-center space-x-3 sm:space-x-4">
+                <div
+                  class="bg-green-500 text-white p-3 sm:p-4 rounded-full text-xl sm:text-2xl flex-shrink-0"
+                >
                   🚚
                 </div>
                 <div>
-                  <h5 class="font-bold text-gray-800 text-lg">
+                  <h5 class="font-bold text-gray-800 text-base sm:text-lg">
                     Entrega a Domicilio
                   </h5>
-                  <p class="text-gray-600">
+                  <p class="text-gray-600 text-sm sm:text-base">
                     ¡Llevamos la dulzura hasta tu puerta!
                   </p>
                 </div>
               </div>
             </div>
           </div>
-
           <!-- Formulario de Contacto (Demo) -->
-          <div class="bg-white rounded-3xl p-10 shadow-2xl">
+          <div class="bg-white rounded-3xl p-6 sm:p-10 shadow-2xl">
             <div
-              class="bg-yellow-100 border border-yellow-400 text-yellow-800 px-4 py-3 rounded-lg mb-6 text-sm"
+              class="bg-yellow-100 border border-yellow-400 text-yellow-800 px-3 sm:px-4 py-2 sm:py-3 rounded-lg mb-4 sm:mb-6 text-xs sm:text-sm"
             >
               <strong>Demo:</strong> Este formulario es solo para demostración
             </div>
-
-            <h4 class="font-fredoka text-3xl text-pink-800 mb-8 text-center">
+            <h4
+              class="font-fredoka text-2xl sm:text-3xl text-pink-800 mb-6 sm:mb-8 text-center"
+            >
               ¡Cuéntanos tu Idea!
             </h4>
-
-            <form class="space-y-6">
+            <form class="space-y-4 sm:space-y-6">
               <div>
-                <label class="block text-gray-700 font-bold mb-2 text-lg"
+                <label
+                  class="block text-gray-700 font-bold mb-2 text-base sm:text-lg"
                   >Tu Nombre</label
                 >
                 <input
                   type="text"
-                  class="w-full px-4 py-4 border-2 border-pink-300 rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-transparent text-lg"
+                  class="w-full px-3 sm:px-4 py-3 sm:py-4 border-2 border-pink-300 rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-transparent text-base sm:text-lg"
                   placeholder="¿Cómo te llamas?"
                 />
               </div>
-
               <div>
-                <label class="block text-gray-700 font-bold mb-2 text-lg"
+                <label
+                  class="block text-gray-700 font-bold mb-2 text-base sm:text-lg"
                   >WhatsApp</label
                 >
                 <input
                   type="tel"
-                  class="w-full px-4 py-4 border-2 border-pink-300 rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-transparent text-lg"
+                  class="w-full px-3 sm:px-4 py-3 sm:py-4 border-2 border-pink-300 rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-transparent text-base sm:text-lg"
                   placeholder="Para enviarte fotos de tu pedido"
                 />
               </div>
-
               <div>
-                <label class="block text-gray-700 font-bold mb-2 text-lg"
+                <label
+                  class="block text-gray-700 font-bold mb-2 text-base sm:text-lg"
                   >Tipo de Pedido</label
                 >
                 <select
-                  class="w-full px-4 py-4 border-2 border-pink-300 rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-transparent text-lg"
+                  class="w-full px-3 sm:px-4 py-3 sm:py-4 border-2 border-pink-300 rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-transparent text-base sm:text-lg"
                 >
                   <option>Selecciona tu antojo</option>
                   <option>Cupcakes individuales</option>
@@ -606,21 +623,20 @@
                   <option>Torre de cupcakes</option>
                 </select>
               </div>
-
               <div>
-                <label class="block text-gray-700 font-bold mb-2 text-lg"
+                <label
+                  class="block text-gray-700 font-bold mb-2 text-base sm:text-lg"
                   >Cuéntanos tu Idea</label
                 >
                 <textarea
                   rows="4"
-                  class="w-full px-4 py-4 border-2 border-pink-300 rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-transparent text-lg"
+                  class="w-full px-3 sm:px-4 py-3 sm:py-4 border-2 border-pink-300 rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-transparent text-base sm:text-lg"
                   placeholder="Describe tu cupcake soñado: sabores, colores, decoración, ocasión especial..."
                 ></textarea>
               </div>
-
               <button
                 type="submit"
-                class="w-full rainbow-gradient text-white py-4 rounded-xl font-bold text-xl hover:scale-105 transition-transform shadow-xl"
+                class="w-full rainbow-gradient text-white py-3 sm:py-4 rounded-xl font-bold text-base sm:text-xl hover:scale-105 transition-transform shadow-xl"
               >
                 ¡Enviar mi Pedido Dulce! 🧁💕
               </button>
@@ -629,104 +645,196 @@
         </div>
       </div>
     </section>
-
     <!-- Footer -->
-    <footer class="bg-pink-800 text-white py-16">
-      <div class="container mx-auto px-6">
-        <div class="grid md:grid-cols-4 gap-8">
+    <footer class="bg-pink-800 text-white py-10 sm:py-16">
+      <div class="container mx-auto px-4 sm:px-6">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8"
+        >
           <div>
-            <div class="flex items-center space-x-3 mb-6">
-              <div class="text-4xl">🧁</div>
-              <h4 class="font-fredoka text-3xl">Cupcake Dreams</h4>
+            <div class="flex items-center space-x-2 sm:space-x-3 mb-4 sm:mb-6">
+              <div class="text-3xl sm:text-4xl">🧁</div>
+              <h4 class="font-fredoka text-2xl sm:text-3xl">Cupcake Dreams</h4>
             </div>
-            <p class="text-pink-200 text-lg">
+            <p class="text-pink-200 text-sm sm:text-base lg:text-lg">
               Haciendo realidad los sueños más dulces desde 2020. ¡Cada cupcake
               es una pequeña felicidad!
             </p>
           </div>
-
           <div>
-            <h5 class="font-fredoka text-xl mb-6">Navegación</h5>
-            <ul class="space-y-3 text-pink-200">
+            <h5 class="font-fredoka text-lg sm:text-xl mb-4 sm:mb-6">
+              Navegación
+            </h5>
+            <ul class="space-y-2 sm:space-y-3 text-pink-200">
               <li>
                 <a
                   href="#inicio"
-                  class="hover:text-white transition-colors text-lg"
+                  class="hover:text-white transition-colors text-sm sm:text-base lg:text-lg"
                   >Inicio</a
                 >
               </li>
               <li>
                 <a
                   href="#sabores"
-                  class="hover:text-white transition-colors text-lg"
+                  class="hover:text-white transition-colors text-sm sm:text-base lg:text-lg"
                   >Sabores</a
                 >
               </li>
               <li>
                 <a
                   href="#personalizados"
-                  class="hover:text-white transition-colors text-lg"
+                  class="hover:text-white transition-colors text-sm sm:text-base lg:text-lg"
                   >Personalizados</a
                 >
               </li>
               <li>
                 <a
                   href="#contacto"
-                  class="hover:text-white transition-colors text-lg"
+                  class="hover:text-white transition-colors text-sm sm:text-base lg:text-lg"
                   >Contacto</a
                 >
               </li>
             </ul>
           </div>
-
           <div>
-            <h5 class="font-fredoka text-xl mb-6">Sabores Populares</h5>
-            <ul class="space-y-3 text-pink-200">
+            <h5 class="font-fredoka text-lg sm:text-xl mb-4 sm:mb-6">
+              Sabores Populares
+            </h5>
+            <ul
+              class="space-y-2 sm:space-y-3 text-pink-200 text-sm sm:text-base"
+            >
               <li>🧁 Red Velvet</li>
               <li>🧁 Vainilla Arcoíris</li>
               <li>🧁 Limón Sunshine</li>
               <li>🧁 Chocolate Galaxy</li>
             </ul>
           </div>
-
           <div>
-            <h5 class="font-fredoka text-xl mb-6">Síguenos</h5>
-            <div class="flex space-x-4 mb-6">
-              <button
-                class="bg-pink-700 p-4 rounded-full hover:bg-pink-600 transition-colors text-2xl"
+            <h5 class="font-fredoka text-lg sm:text-xl mb-4 sm:mb-6">
+              Síguenos
+            </h5>
+            <div class="flex flex-wrap gap-3 sm:gap-4 mb-4 sm:mb-6">
+              <!-- Facebook -->
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="bg-pink-700 p-2 sm:p-3 rounded-full hover:bg-pink-600 transition-colors"
               >
-                📘
-              </button>
-              <button
-                class="bg-pink-700 p-4 rounded-full hover:bg-pink-600 transition-colors text-2xl"
+                <svg
+                  class="w-5 h-5 sm:w-6 sm:h-6 fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewbox="0 0 24 24"
+                >
+                  <path
+                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                  /></svg
+              ></a>
+              <!-- Instagram -->
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="bg-pink-700 p-2 sm:p-3 rounded-full hover:bg-pink-600 transition-colors"
               >
-                📷
-              </button>
-              <button
-                class="bg-pink-700 p-4 rounded-full hover:bg-pink-600 transition-colors text-2xl"
+                <svg
+                  class="w-5 h-5 sm:w-6 sm:h-6 fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewbox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                  /></svg
+              ></a>
+              <!-- TikTok -->
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="bg-pink-700 p-2 sm:p-3 rounded-full hover:bg-pink-600 transition-colors"
               >
-                🐦
-              </button>
-              <button
-                class="bg-pink-700 p-4 rounded-full hover:bg-pink-600 transition-colors text-2xl"
+                <svg
+                  class="w-5 h-5 sm:w-6 sm:h-6 fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewbox="0 0 24 24"
+                >
+                  <path
+                    d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"
+                  /></svg
+              ></a>
+              <!-- Pinterest -->
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="bg-pink-700 p-2 sm:p-3 rounded-full hover:bg-pink-600 transition-colors"
               >
-                📱
-              </button>
+                <svg
+                  class="w-5 h-5 sm:w-6 sm:h-6 fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewbox="0 0 24 24"
+                >
+                  <path
+                    d="M12 0c-6.627 0-12 5.372-12 12 0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146 1.124.347 2.317.535 3.554.535 6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"
+                  /></svg
+              ></a>
+              <!-- YouTube -->
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="bg-pink-700 p-2 sm:p-3 rounded-full hover:bg-pink-600 transition-colors"
+              >
+                <svg
+                  class="w-5 h-5 sm:w-6 sm:h-6 fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewbox="0 0 24 24"
+                >
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                  /></svg
+              ></a>
+              <!-- GitHub -->
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="bg-pink-700 p-2 sm:p-3 rounded-full hover:bg-pink-600 transition-colors"
+              >
+                <svg
+                  class="w-5 h-5 sm:w-6 sm:h-6 fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewbox="0 0 24 24"
+                >
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                  /></svg
+              ></a>
             </div>
-            <p class="text-pink-200">¡Comparte tus fotos con #CupcakeDreams!</p>
+            <p class="text-pink-200 text-sm sm:text-base">
+              ¡Comparte tus fotos con #CupcakeDreams!
+            </p>
           </div>
         </div>
-
-        <div class="border-t border-pink-700 mt-12 pt-8 text-center">
-          <p class="text-pink-200 text-lg">
-            &copy; 2024 Cupcake Dreams. Todos los derechos reservados.
-            <span class="text-2xl">🧁💕✨</span>
+        <div
+          class="border-t border-pink-700 mt-8 sm:mt-12 pt-6 sm:pt-8 text-center"
+        >
+          <p class="text-pink-200 text-sm sm:text-base lg:text-lg">
+            © 2024 Cupcake Dreams. Todos los derechos reservados.
+            <span class="text-xl sm:text-2xl">🧁💕✨</span>
           </p>
         </div>
       </div>
     </footer>
-
     <script>
+      // Mobile menu toggle
+      const mobileMenuBtn = document.getElementById("mobile-menu-btn");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      mobileMenuBtn.addEventListener("click", function () {
+        mobileMenu.classList.toggle("hidden");
+      });
+
       // Smooth scrolling
       document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
         anchor.addEventListener("click", function (e) {
@@ -737,6 +845,8 @@
               behavior: "smooth",
               block: "start",
             });
+            // Close mobile menu after clicking
+            mobileMenu.classList.add("hidden");
           }
         });
       });
@@ -836,7 +946,7 @@
           if (b) {
             var d = b.createElement("script");
             d.innerHTML =
-              "window.__CF$cv$params={r:'97d4f3e3441ab20e',t:'MTc1NzU3MDUwOS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+              "window.__CF$cv$params={r:'9b1aece24024eef2',t:'MTc2NjM1NzI4OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
             b.getElementsByTagName("head")[0].appendChild(d);
           }
         }
